@@ -36,7 +36,7 @@ nav a:hover {
 
 /* Hero Image */
 .hero img {
-  width: 20%;
+  width: 100%;
   height: auto;
   display: block;
   max-height: 500px;
