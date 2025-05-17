@@ -81,6 +81,10 @@ footer {
 
 /* Responsive tweaks */
 @media (max-width: 600px) {
+  
+  nav{
+    background-color: #000 /* Repeat here in case mobile styles override it */
+  }
   nav a {
     display: block;
     margin: 0.5rem 0;
