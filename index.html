@@ -152,19 +152,25 @@
     .btn-outline { background: transparent; color: var(--off-white); border: 1.5px solid rgba(255,255,255,0.3); }
     .btn-outline:hover { border-color: var(--yellow); color: var(--yellow); }
 
-    .hero-image-wrap {
-      position: relative;
-      border-radius: 20px;
-      overflow: hidden;
-      aspect-ratio: 4/5;
-      max-height: 620px;
-    }
+.hero-image-wrap {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,224,58,0.15);
+}
 
-    .hero-image-wrap img {
-      width: 100%; height: 100%;
-      object-fit: cover;
-      display: block;
-    }
+ .hero-image-wrap img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
 
     .hero-image-wrap::after {
       content: '';
