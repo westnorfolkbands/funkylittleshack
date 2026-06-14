@@ -164,6 +164,31 @@
   border: 1px solid rgba(255,224,58,0.15);
 }
 
+.hero-image-wrap::before {
+  content: '';
+  position: absolute;
+  left: -40px; top: 50%;
+  transform: translateY(-50%);
+  width: 200px; height: 200px;
+  background: var(--hot-pink);
+  border-radius: 50%;
+  opacity: 0.18;
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+.hero-image-wrap::after {
+  content: '';
+  position: absolute;
+  right: -40px; top: 50%;
+  transform: translateY(-50%);
+  width: 200px; height: 200px;
+  background: var(--electric-blue);
+  border-radius: 50%;
+  opacity: 0.18;
+  filter: blur(60px);
+  pointer-events: none;
+}
  .hero-image-wrap img {
   width: 100%;
   max-width: 420px;
