@@ -57,7 +57,7 @@
 
     /* ABOUT */
     #about { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
-    .about-image-wrap { border-radius: 16px; overflow: hidden; aspect-ratio: 1/1; position: relative; }
+    .about-image-wrap { border-radius: 16px; overflow: hidden; aspect-ratio: 16/9; position: relative; }
     .about-image-wrap img { width: 100%; height: 100%; object-fit: cover; }
     .about-accent { position: absolute; bottom: -20px; right: -20px; width: 140px; height: 140px; background: var(--electric-blue); border-radius: 50%; opacity: 0.15; filter: blur(30px); }
     .about-text p { color: rgba(245,243,238,0.65); margin-bottom: 1.2rem; max-width: 520px; }
@@ -282,7 +282,7 @@
       I'M A BELIEVER <span class="dot">·</span>
       LEVITATING <span class="dot">·</span>
       I'M STILL STANDING <span class="dot">·</span>
-      MAN I FEEL LIKE A WOMAN
+      MAN I FEEL LIKE A WOMAN <span class="dot">·</span>
       PROUD MARY <span class="dot">·</span>
       FOOTLOOSE <span class="dot">·</span>
       MURDER ON THE DANCE FLOOR <span class="dot">·</span>
@@ -347,7 +347,7 @@
     <h2 class="section-title">Get in touch</h2>
     <p>Want to book us for your wedding, party, or event? Fill in the form and we'll get back to you within 48 hours.</p>
 
-    <form class="contact-form" onsubmit="handleSubmit(event)">
+    <form class="contact-form" action="https://formspree.io/f/mykaalzy" method="POST">
       <div class="form-row">
         <div class="field">
           <label for="fname">Your name</label>
@@ -384,7 +384,7 @@
       </div>
     </form>
 
-    <p class="contact-email">Or email directly: <a href="mailto:hello@funkylittleshack.com">hello@funkylittleshack.com</a></p>
+    <p class="contact-email">Or email directly: <a href="mailto:info@funkylittleshack.band">info@funkylittleshack.band</a></p>
   </div>
 </section>
 
@@ -408,16 +408,7 @@
   <p class="footer-copy">© 2025 Funky Little Shack. All rights reserved.</p>
 </footer>
 
-<script>
-  function handleSubmit(e) {
-    e.preventDefault();
-    const btn = e.target.querySelector('button[type="submit"]');
-    btn.textContent = 'Sent! ✓';
-    btn.style.background = '#1AEFFF';
-    btn.style.color = '#0D0D0D';
-    btn.disabled = true;
-  }
-</script>
+
 
 </body>
 </html>
