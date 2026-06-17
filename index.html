@@ -348,41 +348,41 @@
     <p>Want to book us for your wedding, party, or event? Fill in the form and we'll get back to you within 48 hours.</p>
 
     <form class="contact-form" action="https://formspree.io/f/mykaalzy" method="POST">
-      <div class="form-row">
-        <div class="field">
-          <label for="fname">Your name</label>
-          <input type="text" id="fname" placeholder="Jane Smith" required />
-        </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="jane@example.com" required />
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="field">
-          <label for="enquiry">Enquiry type</label>
-          <select id="enquiry">
-            <option value="">Select one…</option>
-            <option>Wedding</option>
-            <option>Private party</option>
-            <option>Corporate event</option>
-            <option>Festival / venue</option>
-            <option>General</option>
-          </select>
-        </div>
-        <div class="field">
-          <label for="date">Preferred date</label>
-          <input type="date" id="date" />
-        </div>
-      </div>
-      <div class="field">
-        <label for="message">Message</label>
-        <textarea id="message" placeholder="Tell us about your event…"></textarea>
-      </div>
-      <div class="form-submit">
-        <button type="submit" class="btn btn-primary">Send message</button>
-      </div>
-    </form>
+  <div class="form-row">
+    <div class="field">
+      <label for="fname">Your name</label>
+      <input type="text" id="fname" name="name" placeholder="Jane Smith" required />
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="jane@example.com" required />
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="field">
+      <label for="enquiry">Enquiry type</label>
+      <select id="enquiry" name="enquiry">
+        <option value="">Select one…</option>
+        <option>Wedding</option>
+        <option>Private party</option>
+        <option>Corporate event</option>
+        <option>Festival / venue</option>
+        <option>General</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="date">Preferred date</label>
+      <input type="date" id="date" name="date" />
+    </div>
+  </div>
+  <div class="field">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Tell us about your event…"></textarea>
+  </div>
+  <div class="form-submit">
+    <button type="submit" class="btn btn-primary">Send message</button>
+  </div>
+</form>
 
     <p class="contact-email">Or email directly: <a href="mailto:info@funkylittleshack.band">info@funkylittleshack.band</a></p>
   </div>
